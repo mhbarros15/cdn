@@ -1,0 +1,419 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(110,210,255);
+    background: -webkit-linear-gradient(rgba(110,210,255,1) 0%, rgba(0,129,255,1) 100%);
+    background: -o-linear-gradient(rgba(110,210,255,1) 0%, rgba(0,129,255,1) 100%);
+    background: linear-gradient(rgba(110,210,255,1) 0%, rgba(0,129,255,1) 100%);
+}
+
+header {
+    height: 8vh;
+}
+
+main h2 {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+main p {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px
+}
+
+.ph-logo {
+    width: 160px;
+    transition: .2s;
+}
+
+.ph-logo:hover {
+    opacity: 0.7;
+    transition: .2s;
+}
+
+.menu-header li {
+    list-style: none;
+    padding-right: 5%;
+}
+
+.menu-header a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    transition: .2s;
+}
+
+.menu-header a:hover {
+    color: #333;
+    transition: .2s;
+}
+
+.menu-header i {
+    padding: 0 10px;
+}
+
+.rodape {
+    height: 20vh;
+    background-color: #222;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    z-index: 9;
+}
+
+.rodape p {
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.rodape a {
+    color: #fff;
+}
+
+.rodape i {
+    padding: 0 30px;
+    font-size: 15px;
+}
+
+.rodape h5 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1px
+}
+
+footer {
+    z-index: 999 !important;
+}
+
+.sociais a {
+    transition: .2s;
+}
+
+.sociais a:hover {
+    color: #ffc107;
+    transition: .2s;
+}
+
+@media (max-width: 767px) {
+    .sociais {
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .ph-logo {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    main h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    main p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    main a {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 767px) {
+    #menuArea {
+        top: -120px;
+        right: 50px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    main h2 {
+        font-size: 25px;
+    }
+
+    main p {
+        font-size: 12px;
+    }
+
+    .menu-header {
+        display: none !important;
+    }
+
+    body {
+        background-position: center;
+    }
+
+    #menuArea {
+        display: block !important;
+    }
+}
+
+#menuArea {
+    display: none;
+    margin-top: 2rem;
+    z-index: 999;
+    position: absolute;
+    right: 0;
+}
+
+input {
+    display: none;
+}
+
+.open {
+    background-color: #fff;
+    width: 24px;
+    height: 4px;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    top: 8px;
+    z-index: 9999;
+}
+
+.open:before {
+    content: "";
+    background-color: #fff;
+    width: 24px;
+    height: 4px;
+    display: block;
+    position: relative;
+    top: -8px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+.open:after {
+    content: "";
+    background-color: #fff;
+    width: 24px;
+    height: 4px;
+    display: block;
+    position: relative;
+    top: 4px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+.menuOpen {
+    width: 24px;
+    height: 20px;
+    display: block;
+    padding: 15px;
+    cursor: pointer;
+    float: right;
+}
+
+.menuOpen:hover .open:before {
+    top: -9px;
+}
+
+.menuOpen:hover .open:after {
+    top: 5px;
+}
+
+.menu {
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(18, 18, 19, 0.9);
+}
+
+.menu label {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.menu .menuContent {
+    position: relative;
+    top: 50%;
+    font-size: 54px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: -170px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.menu ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-weight: 700;
+}
+
+.menu ul li a:hover {
+    color: #ffc107;
+}
+
+.menu ul li:hover {
+    background: #232323;
+}
+
+.menuEffects {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.menuEffects ul {
+    transform: translateY(0%);
+    transition: all 0.5s;
+}
+
+#menuToggle:checked~.menuEffects {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s;
+}
+
+#menuToggle:checked~.menuEffects ul {
+    opacity: 1;
+}
+
+#menuToggle:checked~.menuOpen .open {
+    background-color: transparent;
+}
+
+#menuToggle:checked~.menuOpen .open:before {
+    content: "";
+    background-color: white;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#menuToggle:checked~.menuOpen .open:after {
+    content: "";
+    background-color: white;
+    transform: rotate(-45deg);
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#menuToggle:not(:checked)~.menuEffects ul {
+    transform: translateY(-30%);
+}
+
+@media (max-height: 640px) { 
+    .rodape {
+        height: 30vh;
+    }
+}
+
+.pricing .card {
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    border-radius: ;
+    transition: all 0.2s;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    background-color: rgba(0,0,0,.9);
+    color: rgba(255,255,255,0.85);
+    overflow: hidden;
+}
+
+.pricing hr {
+    margin: 1.5rem 0;
+}
+
+.pricing .card-title {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+}
+
+.pricing .card-price {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.pricing .card-price .period {
+    font-size: 0.8rem;
+}
+
+.pricing ul li {
+    margin-bottom: 1rem;
+}
+
+.pricing .text-muted {
+    opacity: 0.9;
+}
+
+.pricing .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+    .pricing .card:hover {
+        margin-top: -.25rem;
+        margin-bottom: .25rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+    .pricing .card:hover .btn {
+        opacity: 1;
+    }
+}
+
+.pop {
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    font-size: 10px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 15px;
+    right: -33px;
+    padding: 4px 30px;
+}
+
+.active-btn {
+    color: #333!important;
+}
