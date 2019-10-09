@@ -461,4 +461,8 @@ input {
         position: relative;
         top: -25%;
     }
+    
+    .rodape {
+        height: 30vh;
+    }
 }
