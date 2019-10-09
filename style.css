@@ -456,9 +456,9 @@ input {
     transform: translateY(-30%);
 }
 
-@media (max-height: 540px) {
+@media (max-height: 640px) {
     .download {
         position: relative;
-        top: -25%
+        top: -25%;
     }
 }
