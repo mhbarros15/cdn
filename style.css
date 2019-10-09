@@ -455,3 +455,10 @@ input {
 #menuToggle:not(:checked)~.menuEffects ul {
     transform: translateY(-30%);
 }
+
+@media (max-height: 540px) {
+    .download {
+        position: relative;
+        top: -25%
+    }
+}
