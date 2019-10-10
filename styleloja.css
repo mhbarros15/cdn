@@ -417,3 +417,7 @@ input {
 .active-btn {
     color: #333!important;
 }
+
+@media (max-width: 767px) {
+    margin-top: 3.5rem;
+}
