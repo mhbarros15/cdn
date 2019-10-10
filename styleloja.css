@@ -419,5 +419,7 @@ input {
 }
 
 @media (max-width: 767px) {
-    margin-top: 3.5rem;
+    #menuArea{
+        margin-top: 3.5rem;
+    }
 }
