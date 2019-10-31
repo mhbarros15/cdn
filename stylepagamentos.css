@@ -3,11 +3,11 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 .overlay {
     height: auto;
-    background-color: rgba(33, 33, 33, 0.5);
 }
 
 .vicio-logo {
