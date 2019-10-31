@@ -1,0 +1,127 @@
+body {
+    background-image: url(gta-v-sunset-in-game-screenshot-grand-theft-auto-v.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.overlay {
+    height: 100vh;
+    background-color: rgba(33, 33, 33, 0.5);
+}
+
+.vicio-logo {
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    transition: .2s;
+}
+
+.vicio-logo:hover {
+    opacity: 0.7;
+}
+
+.box{
+    padding: 60px 0px;
+}
+
+.box h4 {
+    font-size: 16px;
+    font-family: 'Raleway';
+    font-weight: 600;
+}
+
+.box-part{
+    background: #FFF;
+    border-radius: 7px 7px 0 0;
+    padding: 80px 10px;
+    margin-top: 40px;
+    min-height: 250px;
+    min-width: 165px;
+}
+
+.shop img {
+    width: 100px;
+}
+
+.confirm img {
+    width: 100px;
+}
+
+.btn-comprar a {
+    background-color: #2d98da;
+    width: 100vw;
+    text-decoration: none!important;
+    color: #fff;
+    text-align: center;
+    padding: 13px;
+    text-transform: uppercase;
+    font-family: 'Raleway';
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 0 0 7px 7px;
+    transition: .2s;
+}
+
+.btn-comprar a:hover {
+    background-color: #2681b9;
+}
+
+.btn-comprar i {
+    padding-right: 5px;
+}
+
+.btn-comprar {
+    min-width: 165px;
+}
+
+.text{
+    margin: 20px 0px;
+    align-content: 
+}
+
+.box-anim {
+    top: 0px;
+    transition: .2s;
+}
+
+.box-anim:hover {
+    top: -10px;
+    transition: .2s;
+}
+
+footer {
+    display: flex;
+    background-color: #111;
+    height: auto;
+    min-height: 150px;
+    justify-content: center;
+    text-align: center;
+}
+
+.rodape {
+    color: #fff;
+    font-family: 'Raleway';
+    line-height: 2px;
+}
+
+.rodape h5 {
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.rodape p {
+    font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    .box {
+        padding: 180px 0;
+    }
+}
+
+/* Todos os direitos reservados para Matheus Barros e Lincoln Moreira.
+Qualquer cópia não autorizada, estará sujeito à uma ação judicial! */
