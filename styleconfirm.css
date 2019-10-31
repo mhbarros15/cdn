@@ -135,5 +135,11 @@ footer {
     }
 }
 
+@media (max-height: 640px) {
+    .overlay {
+        height: 150vh;
+    }
+}
+
 /* Todos os direitos reservados para Matheus Barros e Lincoln Moreira.
 Qualquer cópia não autorizada, estará sujeito à uma ação judicial! */
