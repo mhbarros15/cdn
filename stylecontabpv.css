@@ -52,14 +52,12 @@ body {
 }
 
 .caixa p{
-    line-height: 4px;
     text-align: center;
     font-size: 14px;
     letter-spacing: 0.5px;
 }
 
 .paypal p{
-    line-height: 4px;
     text-align: center;
     font-size: 14px;
     letter-spacing: 0.5px;
@@ -89,7 +87,6 @@ body {
 }
 
 .nubank p {
-    line-height: 4px;
     text-align: center;
     font-size: 14px;
     letter-spacing: 0.5px;
@@ -104,7 +101,6 @@ body {
 }
 
 .inter p {
-    line-height: 4px;
     text-align: center;
     font-size: 14px;
     letter-spacing: 0.5px;
