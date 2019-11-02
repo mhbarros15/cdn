@@ -106,6 +106,20 @@ body {
     letter-spacing: 0.5px;
 }
 
+.itau img {
+    width: 100px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.itau p {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
 .btn-comprar a {
     background-color: #2d98da;
     width: 100vw;
