@@ -264,3 +264,23 @@ main {
 .nav-footer a:hover {
     opacity: 0.7;
 }
+
+@media only screen and (max-height:810px) {
+    main {
+        height: 150vh;
+    }
+
+    body {
+        background-size: 400% 400%;
+    }
+}
+
+@media only screen and (max-height:660px) {
+    main {
+        height: 190vh;
+    }
+
+    body {
+        background-size: 500% 500%;
+    }
+}
