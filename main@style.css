@@ -257,16 +257,9 @@ main {
     opacity: 0.7;
 }
 
-*:focus {
-    box-shadow: none!important;
-    background-color: rgb(244, 244, 254)!important;
-}
-
 #ocorrido {
     padding-top: 13px;
 }
-
-
 
 .nav-footer a:hover {
     opacity: 0.7;
