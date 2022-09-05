@@ -71,42 +71,20 @@ $(document).ready(function() {
             $('input[name="message"]').val(tpl);
             $('input[name="subject"]').val('[' + dia + '/' + mes + '/' + ano4 + '] Denúncia: [' + $('#organizacao').val() + '] ' + $('#endereco').val() + ' - ' + $('#motivo').val() + ' #' + id);
             Swal.fire({
-                title: 'Ei, você é um robô?',
-                confirmButtonColor: '#eb2055',
-                confirmButtonText: 'Prosseguir',
-                backdrop: `rgba(24, 40, 70, 0.6)`,
+                title: 'Denúncia Publicada',
+                showConfirmButton: false,
+                icon: 'success',
                 allowOutsideClick: false,
                 showClass: {
                     popup: 'animate__animated animate__fadeInDown'
-                  },
-                html: '<div id="recaptcha"></div>',
-                didOpen: () => {
-                  grecaptcha.render('recaptcha', {
-                    'sitekey': '6LdvplUUAAAAAK_Y5M_wR7s-UWuiSEdVrv8K-tCq'
-                  })
-                },
-                preConfirm: function () {
-                  if (grecaptcha.getResponse().length === 0) {
-                    Swal.showValidationMessage(`Por favor, nos confirme o reCaptcha`)
-                  } else {
-                    Swal.fire({
-                        title: 'Denúncia Publicada',
-                        showConfirmButton: false,
-                        icon: 'success',
-                        allowOutsideClick: false,
-                        showClass: {
-                            popup: 'animate__animated animate__fadeInDown'
-                          },
-                        timer: 3000,
-                        timerProgressBar: true,
-                        backdrop: `rgba(24, 40, 70, 0.6)`
-                    });
-                    setTimeout(function(){
-                        $('#bt-enviar-e').click();
-                    }, 3000);
-                  }
-                }
-              })
+                    },
+                timer: 3000,
+                timerProgressBar: true,
+                backdrop: `rgba(24, 40, 70, 0.6)`
+            });
+            setTimeout(function(){
+                $('#bt-enviar-e').click();
+            }, 3000);
         } else {
             Swal.fire({
                 title: 'Ocorreu um erro',
